@@ -4,37 +4,32 @@ buildscript{
         jcenter()
     }
     dependencies{
-        classpath "net.serenity-bdd:serenity-gradle-plugin:2.3.12"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.3.4"
     }
 }
+
+
 
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.3.41'
 }
-
 apply plugin: 'net.serenity-bdd.aggregator'
+
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
-    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.3.12'
-    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.3.12'
-    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.3.12'
-    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.3.12'
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.3.4'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.3.4'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.3.4'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.3.4'
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
-}
