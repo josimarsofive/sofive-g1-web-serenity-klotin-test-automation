@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ExampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-22T01:26:07" hostname="DESKTOP-CVJV90J" time="25.928">
+<testsuite name="ExampleTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-22T02:00:52" hostname="DESKTOP-CVJV90J" time="27.064">
   <properties/>
-  <testcase name="navigateToContactPage" classname="ExampleTests" time="25.928"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="invalidEmail" classname="ExampleTests" time="27.064"/>
+  <system-out><![CDATA[el valor de error 1 es There is 1 error
+Invalid email address.
+el valor de error 2 es There is 1 error
+Invalid email address.
+]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 35573
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 36788
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-ene 21, 2021 8:26:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+ene 21, 2021 9:01:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
