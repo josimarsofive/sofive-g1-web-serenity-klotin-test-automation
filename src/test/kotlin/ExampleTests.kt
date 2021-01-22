@@ -4,6 +4,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb
 import net.serenitybdd.screenplay.actions.Click
 import net.serenitybdd.screenplay.actions.Enter
 import net.serenitybdd.screenplay.actions.Open
+import net.serenitybdd.screenplay.actions.SelectFromOptions
 import net.serenitybdd.screenplay.targets.Target
 import net.thucydides.core.annotations.Managed
 import org.junit.Test
@@ -29,6 +30,9 @@ class ExampleTests {
             val message = Target.the("message")
             .located(By.cssSelector("textarea#message"))
 
+        val subjectHeading = Target.the("subject heading")
+            .located(By.cssSelector("select#id_contact"))
+
         val send = Target.the("send")
             .located(By.cssSelector("button#submitMessage"))
 
@@ -39,6 +43,8 @@ class ExampleTests {
             Open.url("http://automationpractice.com/index.php?controller=contact"),
             Enter.theValue("sofive@gmail.com").into(emailAddress),
             Enter.theValue("el mensaje").into(message),
+            Enter.theValue("55555555").into(orderReference),
+            SelectFromOptions.byVisibleText("Customer service").from(subjectHeading),
             Click.on(send)
 
             )
